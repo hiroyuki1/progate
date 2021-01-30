@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+  <header id="top">
+    <div class="container">
+      <div class="left">
+        <img src="img/main_logo.png" alt="">
+      </div>
+      <div class="right">
+        <!-- ハンバーガー -->
+        <div class="menu-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="menu">
+        <div class="menu__item"><a href="#">TOP</a></div>
+        <div class="menu__item"><a href="#lesson-container">レッスン</a></div>
+        <div class="menu__item"><a href="#lets">新規登録</a></div>
+        <div class="menu__item login">ログイン</div>
+      </div>
+        <!-- ハンバーガーここまで -->
+        <ul>
+          <li><a href="#lesson-container">レッスン</a></li>
+          <li><a href="#lets">新規登録</a></li>
+          <li class="login"><a href="#login">ログイン</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+    <!-- モーダル部分 -->
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div id="close-modal" class=".close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <div id="signup-form">
+          <h2>Emailで新規登録</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div id="submit-btn">新規登録</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- モーダルここまで -->
+        <!-- ログインモーダル部分 -->
+        <div class="login-modal-wrapper" id="login-modal">
+          <div class="modal">
+            <div class="close-modal">
+              <i class="fa fa-2x fa-times"></i>
+            </div>
+            <div id="login-form">
+              <h2>ログイン</h2>
+              <form action="#">
+                <input class="form-control" type="text" placeholder="メールアドレス">
+                <input class="form-control" type="password" placeholder="パスワード">
+                <div id="submit-btn">ログイン</div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- ログインモーダルここまで -->
+  <section>
+    <div class="container">
+      <div id="menu" class="message">
+
+        <h2>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h2>
+        <p>Progateはオンラインプログラミング学習サービスです。<br>
+          初心者にもやさしいスライドとレッスンで、Webサービスを作りながらプログラミングを学んでいきましょう。
+        </p>
+      </div>
+      <div class="invite">
+        <p class="btn register signup-show">新規登録はこちら</p>
+        <p>or</p>
+        <div class="sns">
+          <p class="btn facebook"><i class="fab fa-facebook-square"></i>Facebookで登録</p>
+          <p></p>
+          <p class="btn twitter"><i class="fab fa-twitter-square"></i>Twitterで登録</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="lesson-container" class="lesson-container">
+      <h2>Learn Where to Get Started!</h2>
+      <div class="lessons">
+        <div class="lessons1">
+          <div class="lesson">
+            <div class="lesson-img">
+              <img src="img/html.png" alt="">
+              <p>HTML / CSS</p>
+            </div>
+            <div class="lesson-content">
+              Webページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。
+            </div>
+          </div>
+          <div class="lesson">
+            <div class="lesson-img">
+              <img src="img/jQuery.png" alt="">
+              <p>jQuery</p>
+            </div>
+            <div class="lesson-content">
+              素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。
+            </div>
+          </div> 
+        </div>
+        <div class="lessons2">
+          <div class="lesson">
+            <div class="lesson-img">
+              <img src="img/ruby.png" alt="">
+              <p>Ruby</p>
+            </div>
+            <div class="lesson-content">
+              オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。
+            </div>
+          </div>
+          <div class="lesson">
+            <div class="lesson-img">
+              <img src="img/php.png" alt="">
+              <p>PHP</p>
+            </div>
+            <div class="lesson-content">
+              HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="lets" class="lets">
+      <div class="message">
+        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
+        <h3>Let's learn to code, learn to be creative!</h3>
+      </div>
+      <div class="btn signup-show"><p>さっそく開発する</p></div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <img src="img/footer_logo.png" alt="">
+      <p>Learn to code, learn to be creative.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
